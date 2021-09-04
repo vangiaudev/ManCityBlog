@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Post One</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <div class="logo">
+          <img id="logo" src="./images/logooo.PNG" alt="" />
+          <div class="logoText">Manchester City</div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#contact">Schedule</a></li>
+            <li><a href="index.html#s3">Manager</a></li>
+            <li><a href="index.html#cases">Cards</a></li>
+            <li><a href="index.html#s2">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Blog</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="post">
+        <h2>Ông chủ của Manchester City là ai?</h2>
+        <p class="meta">
+          <i class="fas fa-user"></i> Được đăng bởi <strong>Alex Dev</strong> |
+          April 23 2020
+        </p>
+        <img src="images/blog/blog1.jpg" target="blank" alt="" />
+        <p>
+          Tỷ phú Sheikh Mansour bin Zayed Al Nahyan là một trong số rất ít 
+          hoàng gia Trung Đông được quốc tế công nhận, Sheikh Mansour 
+          hiện tại đang là phó thủ tướng của Các tiểu Vương quốc Ả Rập 
+          thống nhất, người khiến cả thế giới chú ý khi mua Câu lạc bộ bóng 
+          đá Manchester City vào năm 2008.
+          <br />
+          Mặc dù Sheikh Mansour đã đầu tư 1,6 triệu đô la Mỹ vào câu lạc bộ 
+          này trong hơn một thập kỷ qua và được xem là một dạng xây dựng 
+          quyền lực mềm của ông trên thế giới, tuy nhiên, con số này chỉ là 
+          một phần vô cùng nhỏ nếu so với khối tài sản hơn 30 tỷ đô mà 
+          Sheikh đang nắm giữ.
+        </p>
+        
+        <p>
+          Tình yêu đối với Manchester City của ông là điều không thể tranh cãi
+          <br />
+          Kể từ khi Sheikh Mansour tiếp quản Manchester City từ cựu thủ 
+          tướng Thái Lan Thaksin Shinawatra, Câu lạc bộ đã tiếp tục giành 
+          bốn chức vô địch Ngoại hạng Anh, bốn Cup Liên đoàn và hai Cup FA 
+          – khiến giá trị của Tập đoàn bóng đá này tăng vọt lên 4,8 tỷ USD và 
+          khiến MCFC trở thành một trong những câu lạc bộ có nhượng quyền 
+          thương mại thể thao đắt giá nhất trên thế giới.
+          <br />
+          Sheikh Mansour’s City Football Group được ông thành lập vào năm 
+          2015 cũng sở hữu Melbourne City FC và New York City FC. Ngoài ra, 
+          Sheikh còn sở hữu cổ phần của câu lạc bộ như China League Two, 
+          Tứ Xuyên Jiun Iu FC, và vào năm ngoái, có thông tin cho rằng ông 
+          chuẩn bị đầu tư vào một đội bóng của Indonesia.
+          Sở hữu khối tài sản vô cùng khủng khiếp, hiện tại Sheikh Mansour đang 
+          là một trong những vị tỷ phú được nhắc tới nhiều nhất trên thế giới, 
+          đặc biệt gắn liền với tên tuổi của ông chính là câu lạc bộ Manchester City 
+          và chiếc du thuyền Topaz.
+          
+        </p>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer bg-dark">
+      <div class="social">
+        <a target="blank" href="https://www.facebook.com/mancity/"
+          ><i class="fab fa-facebook fa-2x"></i
+        ></a>
+        <a
+          target="blank"
+          href="https://twitter.com/ManCity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          ><i class="fab fa-twitter fa-2x"></i
+        ></a>
+        <a target="blank" href="https://www.youtube.com/user/mcfcofficial"
+          ><i class="fab fa-youtube fa-2x"></i
+        ></a>
+        <a
+          target="blank"
+          href="https://www.google.com/search?q=man+city+google&rlz=1C1CHBF_enUS934US935&oq=man+city+google&aqs=chrome..69i57j0l4j69i60l3.9655j1j9&sourceid=chrome&ie=UTF-8"
+          ><i class="fab fa-google fa-2x"></i
+        ></a>
+      </div>
+      <p>Copyright &copy; 2020 - Manchester City</p>
+    </footer>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
