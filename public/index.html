@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Manchester City Fan Club Việt Nam" />
+    <meta property="og:description"        content="- The Cityzens - &#169; Copyright by Giau Nguyen " />
+    <meta property="og:image"              content="./images/logo_meta.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo_meta.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -20,22 +25,72 @@
       <img
         id="riyad"
         height="100%"
-        src="https://fsb.zobj.net/crop.php?r=NRPx3wm0rvwsxberJClXrrO3Y0_qhZFUkMqAuKKLTuUqnqWMW2dEWRrAkbENZ8zJ_YPVQMaOTgBKKD1aMGwbfz7JEahTvqmn2yd0Y7Dw5amNPzuJQPEOdu8yOlrE4nQL4FFk9HKijFXG-evp"
-        alt="Riyad mahrez mancity"
-        class="sc-fznLPX fGBvIP"
+        src="https://pbs.twimg.com/media/EvkjzWkXYAIWCoW?format=jpg&name=large"
+        alt="Player Man City"
       />
       <div id="navbar" class="navbar top">
         <div class="logo">
-          <img id="logo" src="./images/logooo.PNG" alt="" />
+          <img id="logo" src="./images/logo_meta.png" alt="" />
           <div class="logoText">Manchester City</div>
         </div>
-        <nav>
+        <nav class="nav__pc-list">
           <ul>
             <li><a target="blank" href="#home">Trang Chủ</a></li>
             <li><a target="blank" href="#contact">Lịch Thi Đấu</a></li>
             <li><a target="blank" href="#s3">Huấn Luyện Viên</a></li>
             <li><a target="blank" href="#cases">Wallpaper</a></li>
             <li><a target="blank" href="#s2">Blog</a></li>
+          </ul>
+        </nav>
+        <label for="nav__mobile-input" class="nav__bars-btn">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="bars"
+            class="svg-inline--fa fa-bars fa-w-14"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            ></path>
+          </svg>
+        </label>
+        <input
+          class="nav__input"
+          hidden
+          type="checkbox"
+          id="nav__mobile-input"
+        />
+
+        <label for="nav__mobile-input" class="nav__overlay"> </label>
+        <nav class="nav__mobile">
+          <label for="nav__mobile-input" class="nav__mobile-close">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="times"
+              class="svg-inline--fa fa-times fa-w-11"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 352 512"
+            >
+              <path
+                fill="currentColor"
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+              ></path>
+            </svg>
+          </label>
+          <ul class="nav__mobile-list">
+            <li><a class="nav__mobile-link" target="blank" href="#home">Home</a></li>
+            <li><a class="nav__mobile-link" target="blank" href="#contact">Schedule</a></li>
+            <li><a class="nav__mobile-link" target="blank" href="#s3">Manager</a></li>
+            <li><a class="nav__mobile-link" target="blank" href="#cases">Wallpaper</a></li>
+            <li><a class="nav__mobile-link" target="blank" href="#s2">Blog</a></li>
           </ul>
         </nav>
       </div>
