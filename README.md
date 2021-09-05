@@ -5,8 +5,8 @@ Manchester City is my favourite club,I thoght of building a website that is goin
 
 
 
-View Website on Heroku:
-https://manchester--city.herokuapp.com/
+View Website:
+https://vangiaurecca.github.io/ManCityBlog/public/index.html
 
 
 
